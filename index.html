@@ -14,15 +14,12 @@
                respuesta = "Random value is "+ res.toString();
                return respuesta;
             };
-            function prueba(num) {
+            function prueba() {
                 return specialRandom(num);
-            }
-            function showRandomNumber(){
-                document.getElementById("myNumber").innerHTML = "Random value is "+specialRandom(num);
             }
         </script>
     </head>
-    <body onload="showRandomNumber();">
-        <div id="myNumber">Random value is </div>
+    <body onload="prueba();">
+        <div id="myNumber"></div>
     </body>
 </html>
