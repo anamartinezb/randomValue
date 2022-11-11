@@ -2,8 +2,21 @@
     <head>
         <script src="https://randojs.com/1.0.0.js"></script>
         <script>
+            const num = 1661;
+
+            // no less than 5 and no more than 8 digits.
+            const specialRandom = (num = 1, limit = 10000000) => {
+            // getting a random number
+            const random = Math.random() * limit;
+            // rounding it off to be divisible by num
+            const res = Math.round( random / num ) * num;
+            return res;
+            };
+            function prueba(num) {
+                return specialRandom(num);
+            }
             function showRandomNumber(){
-                document.getElementById("myNumber").innerHTML = "Random value is "+rando(5, 10);
+                document.getElementById("myNumber").innerHTML = "Random value is "+specialRandom(num);
             }
         </script>
     </head>
