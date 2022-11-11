@@ -17,9 +17,12 @@
             function prueba(num) {
                 return specialRandom(num);
             }
+            function showRandomNumber(){
+                document.getElementById("myNumber").innerHTML = specialRandom(num);
+            }
         </script>
     </head>
-    <body onload="prueba(num);">
-        <div id="myNumber"></div>
+    <body onload="showRandomNumber();">
+        <div id="myNumber">Random value is </div>
     </body>
 </html>
